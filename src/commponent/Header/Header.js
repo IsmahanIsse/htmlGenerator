@@ -21,7 +21,7 @@ export default function Header() {
                     <Button variant="outline-warning" size="lg" onClick={TypeBold}><BsTypeBold /></Button>{' '}
                     <Button variant="outline-warning" size="lg" onClick={Underline}><BsTypeUnderline /></Button>{''}
                 </div>
-                <p>Write you Artical Here</p>
+                {/* <p>Write you Artical Here</p> */}
                 <Form>
                     {/* <Form.Label></Form.Label> */}
                     <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
