@@ -5,7 +5,6 @@ import './Header.css'
 import { Container, Button, Form } from 'react-bootstrap'
 import { BsTypeUnderline, BsJustify, BsTextLeft, BsTextRight, BsTypeItalic, BsTextCenter, BsTypeBold } from 'react-icons/bs';
 
-var text = document.getElementById('exampleForm.ControlTextarea1');
 
 export default function Header() {
     return (
@@ -21,7 +20,7 @@ export default function Header() {
                     <Button variant="outline-warning" size="lg" onClick={TypeBold}><BsTypeBold /></Button>{' '}
                     <Button variant="outline-warning" size="lg" onClick={Underline}><BsTypeUnderline /></Button>{''}
                 </div>
-                {/* <p>Write you Artical Here</p> */}
+                <p id="centence">Write you Artical Here </p>
                 <Form>
                     {/* <Form.Label></Form.Label> */}
                     <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
@@ -37,29 +36,50 @@ export default function Header() {
     );
 }
 
+function TextLeft() {
+    const txt = document.getElementById('centence');
+    txt.className = "alignLeft";
+    console.log(txt.textContent);
+
+    
+  }
+
+  function center() {
+    const txt = document.getElementById('centence');
+    txt.className = "alignCenter";
+    console.log(txt.textContent);
+
+  }
+
 function TextRight() {
-    console.log("Right Align Clicked");
+    const txt = document.getElementById('centence');
+    txt.className = "alignRight";
+    console.log(txt.textContent);
 
 }
-function TextLeft() {
-    console.log("Left Align Clicked");
-    console.log(text);
-  
-}
-function center() {
-    console.log("Center Align Clicked");
-}
 function TextJustify() {
-    console.log("Justify Align Clicked");
+    const txt = document.getElementById('centence');
+    txt.className = "alignJustify";
+    console.log(txt.textContent);
+
 }
 function TypeItalic() {
-    console.log("Italic Clicked");
+    const txt = document.getElementById('centence');
+    txt.className = "italic";
+    console.log(txt.textContent);
+
 }
 function TypeBold() {
-    console.log("Bold Clicked");
+    const txt = document.getElementById('centence');
+    txt.className = "bold";
+    console.log(txt.textContent);
+
 }
 function Underline() {
-    console.log("Underline Clicked");
+    const txt = document.getElementById('centence');
+    txt.className = "underLine";
+    console.log(txt.textContent);
+
 }
 function generateHTML() {
     console.log("generateHTML Clicked");
